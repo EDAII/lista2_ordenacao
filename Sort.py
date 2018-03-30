@@ -48,7 +48,3 @@ class Sort:
                     troca = True
                     nums[i+1],nums[i] = nums[i],nums[i+1]
         return nums
-            
-
-
-print(Sort.bubble_sort([2,5,1,4,3]))
