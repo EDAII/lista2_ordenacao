@@ -12,6 +12,8 @@ if __name__ == "__main__":
     while(1):
         print("Choose an option:\n1: Insertion_sort\n2: Shell_sort\n3: Selection_sort\n4: Bubble_sort\n0: exit")
         ans = int(input())
+        if ans != 0:
+            print('This may take a while...')
         if ans == 1:
             ''' Graph of insertion sort in time '''
 
