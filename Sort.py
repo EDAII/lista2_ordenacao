@@ -24,7 +24,31 @@ class Sort:
             gap = gap//2
         return nums
 
+    def selection_sort(nums):
+        tamanho = len(nums)
+
+        for i in range(tamanho-1):
+            index_min = i
+            j= i+1
+            while j < tamanho:
+                if nums[j] < nums[index_min]:
+                    index_min = j
+                j += 1
+            if(index_min != i):
+                nums[index_min],nums[i] = nums[i],nums[index_min]
+        return nums
+
+    def bubble_sort(nums):
+        troca = True
+        while troca == True:
+            troca = False
+
+            for i in range(len(nums)-2):
+                if nums[i] > nums[i+1]:
+                    troca = True
+                    nums[i+1],nums[i] = nums[i],nums[i+1]
+        return nums
+            
 
 
-
-
+print(Sort.bubble_sort([2,5,1,4,3]))
